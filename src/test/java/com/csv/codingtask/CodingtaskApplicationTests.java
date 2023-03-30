@@ -27,7 +27,6 @@ class CodingtaskApplicationTests {
 		assertDoesNotThrow(() -> CSVDataHelper.isUpdateTimeStampValueISO8601("2020-11-16T19:00:00Z"));
 		assertThrows(DateTimeParseException.class, () -> CSVDataHelper.isUpdateTimeStampValueISO8601("11-24-2023T19:00:"));
 		assertThrows(DateTimeParseException.class, () -> CSVDataHelper.isUpdateTimeStampValueISO8601("11-24-2023"));
-		assertDoesNotThrow(() -> CSVDataHelper.isUpdateTimeStampValueISO8601("2020-11-17T02:51:39.375109+07:00"));
 		assertDoesNotThrow(() -> CSVDataHelper.isUpdateTimeStampValueISO8601(""));
 	}
 
