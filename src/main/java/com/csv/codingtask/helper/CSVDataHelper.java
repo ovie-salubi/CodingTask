@@ -71,12 +71,12 @@ public class CSVDataHelper {
 		}
 	}
 
-	private static boolean isPrimaryKeyNullOrBlank(String primaryKeyValue) {
+	public static boolean isPrimaryKeyNullOrBlank(String primaryKeyValue) {
 		return primaryKeyValue == null
 				|| primaryKeyValue.trim().isEmpty();
 	}
 
-	private static void isUpdateTimeStampValueISO8601(String updateTimeStampValue) throws DateTimeParseException {
+	public static void isUpdateTimeStampValueISO8601(String updateTimeStampValue) throws DateTimeParseException {
 		if (updateTimeStampValue != null
 				&& !updateTimeStampValue.trim().isEmpty()) {
 			OffsetDateTime.parse(updateTimeStampValue);
